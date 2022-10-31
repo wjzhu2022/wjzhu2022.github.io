@@ -1,0 +1,16 @@
+name: "My personal website!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Resume"
+      href: resume.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<wz2631@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/wjzhu2022/
+    - icon: fa-book fa-lg
+      href: https://www.researchgate.net/profile/Wenjia-Zhu-2/
+output:
+  html_document:
+    theme: cerulean

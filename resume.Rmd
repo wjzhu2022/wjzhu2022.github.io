@@ -1,0 +1,41 @@
+---
+title: "This is Wenjia Zhu's resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# RESUME
+
+## EDUCATION
+1. Columbia University Irving Medical Center, New York, NY, the USA
+Mailman School of Public Health
+2. Fudan University, Shanghai, China
+Department of Physiology and Pathophysiology
+
+## PUBLICATIONS 
+1. Chen P, Zhu W, Tong F, et al. Identifying novel microhaplotypes for ancestry inference. International Journal of Legal Medicine. 2019 Jul;133(4):983-988.
+2. Fan H, Huang H, Hu L, Zhu W, Yu Y, Lou J, Hu L, Chen F. The activation of STIM1 mediates S-phase arrest and cell death in paraquat induced acute lung intoxication. Toxicol Lett. 2018 Aug;292:123-135
+3. Huang J, Liu Y, Chen JX, Lu XY, Zhu WJ, Qin L, Xun ZX, Zheng QY, Li EM, Sun N, Xu C, Chen HY. Harmine is an effective therapeutic small molecule for the treatment of cardiac hypertrophy. Acta Pharmacol Sin. 2021 Mar 30
+
+## RESEARCH EXPERIENCES
+### Exploring the expression characteristics of metabolic genes in the heart through omics data
+1. Retrieved and analyzed transcriptome data in the GEO public database
+2. Analyzed and interpreted metabolic characteristics of cardiomyocytes under different physiological and pathological conditions
+3. Conducted cell experiment to validate analysis and earned an A in the final assessment
+
+### High-throughput Screening for Small-Molecule Medicine for Hypertrophic Cardiomyopathy
+1. Targeted structural proteins related to hypertrophic cardiomyopathy; established a transcriptional activity reporter system 
+2. Performed high-throughput screening after verification of the system’s stability and sensitivity
+3. Induced pluripotent stem cells (iPS) to produce living cardiomyocytes in vitro to analyze candidate small molecule drugs
+
+### Harmine is an effective therapeutic small molecule for cardiac hypertrophy
+1. Induced and differentiated human pluripotent stem cells to form cardiomyocytes that beat in vitro
+2. Induced norepinephrine to form a cellular model of myocardial hypertrophy
+3. Utilized and administered small molecules with potential pharmacological effects on hypertrophic cardiomyopathy to rats with myocardial hypertrophy phenotypes; performed cardiac ultrasound regularly
+
+### Study on the reprogramming mechanism of mouse oocytes
+1. Sorted parthenogenetic haploid embryonic stem cells PG-haESC enriched in haploids via flow cytometry
+2. Designed the sgRNA sequence and constructed the plasmid independently and used CRISPR-Cas9 to clear the differentially methylated DNA regions (DMR) of H19 and Gtl2 of PG-haESC
+3. Injected DKO-PG-haESCs into the cytoplasm of Metaphase oocytes through microinjection technology to form prokaryotic cells
