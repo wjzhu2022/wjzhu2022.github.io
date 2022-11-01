@@ -19,7 +19,8 @@ output:
 
 *[midterm project](https://github.com/wjzhu2022/P8105_MIDTERM_WZ2631)
 
-### I love doing pixel things...
+
+### I love doing pixel artworks...
 <img src = "image/cat.jpg" style="width:30%">
 <img src = "image/KIWI1.GIF" style="width:30%">
 <img src = "image/KIWI2.GIF" style="width:30%">

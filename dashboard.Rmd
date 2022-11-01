@@ -1,0 +1,86 @@
+---
+title: "dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+library(flexdashboard)
+```
+
+```{r, warning=FALSE}
+data("instacart")
+instacart = 
+  instacart %>% 
+  as_tibble(instacart) %>%
+  select(order_dow, order_hour_of_day, days_since_prior_order, product_name, aisle) %>%
+  filter(
+    days_since_prior_order < 8,
+    aisle %in% c("tea","coffee")
+  ) 
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r, warning=FALSE}
+instacart %>%
+  plot_ly(
+    x = ~order_dow,
+    y = ~order_hour_of_day,
+    color = ~aisle,
+    text = ~product_name,
+    alpha = .2,
+    type = "scatter",
+    mode = "markers"
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r, warning=FALSE}
+instacart %>%
+      group_by(aisle) %>% 
+      count(product_name) %>% 
+      mutate(rank = min_rank(desc(n))) %>% 
+      filter(rank < 6) %>% 
+      mutate(product_name = fct_reorder(product_name,desc(n))) %>%
+      plot_ly(
+        x = ~product_name,
+        y = ~n,
+        color = ~aisle,
+        text = ~product_name,
+        alpha = .5,
+        type = "bar",
+        mode = "markers"
+    )
+```
+
+### Chart C
+
+```{r, warning=FALSE}
+instacart %>%
+    filter(product_name %in% c("Cold Brew Coffee", "Cold-Brew Black Coffee","French Roast Ground Coffee", "Major Dickason's Blend Ground Coffee Dark Roast", "New Orleans Iced Coffee", "Just Green Unsweetened Tea", "Moroccan Mint Green Tea", "Pink Lady Apple Kombucha", "Premium Unsweetened Iced Tea", "Unsweetened Premium Iced Tea")) %>%
+    group_by(aisle, order_dow) %>%
+    summarize(mean_hour = mean(order_hour_of_day)) %>%
+    plot_ly(
+      x = ~aisle,
+      y = ~mean_hour,
+      color = ~aisle,
+      alpha = .5,
+      type = "box",
+      mode = "markers"
+    )
+```
+
